@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const ProfileSchema = new mongoose.Schema({
   discordId: String,
@@ -9,4 +9,4 @@ const ProfileSchema = new mongoose.Schema({
   avatar: String,
 });
 
-module.exports = mongoose.model("Profile", ProfileSchema);
+export const Profile = mongoose.model("Profile", ProfileSchema);

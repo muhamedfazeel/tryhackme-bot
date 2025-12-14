@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const BanSchema = new mongoose.Schema({
   discordId: String,
@@ -9,4 +9,4 @@ const BanSchema = new mongoose.Schema({
   avatar: String,
 });
 
-module.exports = mongoose.model("Ban", BanSchema);
+export const Ban = mongoose.model("Ban", BanSchema);

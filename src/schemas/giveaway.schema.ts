@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const GiveawaySchema = new mongoose.Schema({
   endDate: {
@@ -26,4 +26,4 @@ const GiveawaySchema = new mongoose.Schema({
   ],
 });
 
-module.exports = mongoose.model("Giveaway", GiveawaySchema);
+export const Giveaway = mongoose.model('Giveaway', GiveawaySchema);
