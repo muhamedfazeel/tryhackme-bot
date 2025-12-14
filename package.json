@@ -1,23 +1,36 @@
 {
-  "name": "template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "name": "tryhackme-bot",
+  "version": "2.0.0",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node ."
+    "start": "nodemon",
+    "build": "tsc",
+    "prod": "node dist/index.js",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write 'src/**/*.ts'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
   "dependencies": {
-    "@discordjs/rest": "^2.0.1",
-    "ascii-table": "^0.0.9",
-    "axios": "^1.5.1",
-    "discord-api-types": "^0.37.57",
-    "discord.js": "^14.13.0",
-    "dotenv": "^16.3.1",
-    "mongoose": "^7.6.4",
-    "node-cron": "^3.0.3",
-    "sharp": "^0.33.0"
+    "@discordjs/rest": "^2.6.0",
+    "ascii-table3": "^1.0.1",
+    "axios": "^1.13.2",
+    "discord-api-types": "^0.38.37",
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.2.3",
+    "mongoose": "^9.0.1",
+    "node-cron": "^4.2.1",
+    "sharp": "^0.34.5",
+    "winston": "^3.19.0"
   }
 }
